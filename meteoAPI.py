@@ -1,6 +1,6 @@
 import requests
 
-API="http://api.openweathermap.org/data/2.5/weather?q=Modena,it&appid=ca7252bb6e64b0ddc4974eb12e385a90&lang=it"
+API="http://api.openweathermap.org/data/2.5/weather?q=Modena,it&appid=&lang=it"
 response=requests.get(API).json()
 description=response["weather"][0]["description"]
 temp=float(response["main"]["temp"])
